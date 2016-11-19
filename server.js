@@ -4,7 +4,7 @@ moment().format()
 const express = require('express')
 const app = express()
 
-app.get('*', function (req, res) {
+app.get('*', (req, res) => {
     let time = moment(decodeURIComponent(req.url.slice(1)), ['X', 'MMMM D, YYYY'], 'en', true)
     let unix = null;
     let natural = null;
