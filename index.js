@@ -7,7 +7,10 @@ const app = express()
 app.set('port', (process.env.PORT || 5000))
 
 app.get('*', (req, res) => {
-  let time = moment(decodeURIComponent(req.url.slice(1)), ['X', 'MMMM D, YYYY'], 'en', true)
+  let time = moment(
+    decodeURIComponent(req.url.slice(1)),
+    ['X', 'MMMM D, YYYY'],
+    'en', true)
   let unix = null;
   let natural = null;
   if (time.isValid()) {
