@@ -1,4 +1,4 @@
-# FCC Timestamp Microservice
+## FCC Timestamp Microservice
 *Paul Hoskinson (plhosk@gmail.com)*
 
 ### Technologies:
