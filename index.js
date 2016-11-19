@@ -4,6 +4,8 @@ moment().format()
 const express = require('express')
 const app = express()
 
+app.set('port', (process.env.PORT || 5000))
+
 app.get('*', (req, res) => {
   let time = moment(decodeURIComponent(req.url.slice(1)), ['X', 'MMMM D, YYYY'], 'en', true)
   let unix = null;
@@ -22,4 +24,6 @@ app.get('*', (req, res) => {
   }))
 })
 
-app.listen(8080)
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'))
+})
