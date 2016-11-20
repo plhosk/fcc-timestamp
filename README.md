@@ -1,6 +1,8 @@
 ## FCC Timestamp Microservice
 Paul Hoskinson (plhosk@gmail.com)
 
+Try a live version on [Heroku](https://fcc-timestamp-plhosk.herokuapp.com/)
+
 ### Technologies:
 
 Node, Express
